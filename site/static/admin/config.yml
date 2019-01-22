@@ -10,18 +10,18 @@ public_folder: "/images/uploads"
 
 collections:
   - name: "post"
-    label: "Post"
-    folder: "content/posts"
+    label: "ポスト"
+    folder: "content/post"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Descreption", name: "description", widget: "text"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Category", name: "categories", widget: "list", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "タイトル", name: "title", widget: "string"}
+      - {label: "要約", name: "description", widget: "text"}
+      - {label: "出力日", name: "date", widget: "datetime"}
+      - {label: "画像", name: "thumbnail", widget: "image"}
+      - {label: "カテゴリ", name: "categories", widget: "list", required: false}
+      - {label: "タグ", name: "tags", widget: "list", required: false}
+      - {label: "本文", name: "body", widget: "markdown"}
 
 # media_folder: "site/static/img" # Folder where user uploaded files should go
 # public_folder: "img"
